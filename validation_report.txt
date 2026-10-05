@@ -1,0 +1,161 @@
+Data validation report
+========================================
+input : C:\Users\beethes.ONID\sea-cat\SMC\SMCCopy\scdpp.xls
+input : C:\Users\beethes.ONID\sea-cat\SMC\SMCCopy\log.xls
+
+ER_citations        157 records,  44 fields
+ER_expertlevels       9 records,   7 fields
+MGG_expeditions      92 records,  50 fields
+MGG_features       4851 records,  19 fields
+MGG_grids           919 records,  58 fields
+MGG_multibeam1    65018 records,  92 fields
+MGG_multibeam2    64561 records,  86 fields
+MGG_multibeam3    63569 records,  87 fields
+MGG_multibeam4      186 records,  86 fields
+MGG_samples        2381 records,  28 fields
+PACER_loggers        32 records,   8 fields
+PACER_logsheet      330 records,  15 fields
+SC_maps           10801 records,  68 fields
+SC_regions          278 records,  42 fields
+SC_seamounts       2101 records, 101 fields
+
+Issue summary (by category):
+  area         2
+  duplicate    3
+  lon          114
+  ref          3263
+  type         314
+  warn         58012
+
+Issue summary (by sheet):
+  ER_citations       1
+  MGG_grids          1
+  MGG_multibeam1     10
+  MGG_multibeam2     40
+  MGG_multibeam3     57972
+  MGG_multibeam4     376
+  MGG_samples        1887
+  SC_maps            1408
+  SC_regions         2
+  SC_seamounts       11
+
+Top issue groups (category / sheet / field):
+  warn       MGG_multibeam3   jday1            28820
+  warn       MGG_multibeam3   jday2            28820
+  ref        MGG_samples      er_expedition_name 1886
+  ref        SC_maps          seamount_index   708
+  ref        SC_maps          region_index     669
+  warn       MGG_multibeam4   jday1            186
+  warn       MGG_multibeam4   jday2            186
+  type       MGG_multibeam3   date1            139
+  type       MGG_multibeam3   date2            139
+  lon        MGG_multibeam3   lon4             52
+  lon        MGG_multibeam2   lon4             40
+  type       SC_maps          margin_y         11
+  type       SC_maps          pdf_dpi          11
+  lon        MGG_multibeam1   lon4             10
+  type       SC_maps          gmt_normalization 9
+  lon        SC_seamounts     lon2             6
+  lon        SC_seamounts     lon1             4
+  area       MGG_multibeam3   lat3             2
+  type       MGG_multibeam4   inserted         2
+  type       MGG_multibeam4   updated          2
+
+First 60 issues (of 61708):
+  ER_citations     excel-row 36     er_citation_id   duplicate duplicate key 2134 (first at excel row 35)
+  MGG_grids        excel-row 539    file_name        type      max length 30 expected [row-3=File Name
+Without Extension] got 'tv_funafuti_bathy_preliminary_10m_grid'
+  MGG_multibeam1   excel-row 64396  lon4             lon       lon outside 0..360: 360.002
+  MGG_multibeam1   excel-row 64397  lon4             lon       lon outside 0..360: 360.002
+  MGG_multibeam1   excel-row 64398  lon4             lon       lon outside 0..360: 360.004
+  MGG_multibeam1   excel-row 64399  lon4             lon       lon outside 0..360: 360.006
+  MGG_multibeam1   excel-row 64400  lon4             lon       lon outside 0..360: 360.014
+  MGG_multibeam2   excel-row 64122  lon4             lon       lon outside 0..360: 360
+  MGG_multibeam2   excel-row 64123  lon4             lon       lon outside 0..360: 360
+  MGG_multibeam2   excel-row 64124  lon4             lon       lon outside 0..360: 360.001
+  MGG_multibeam2   excel-row 64125  lon4             lon       lon outside 0..360: 360.004
+  MGG_multibeam2   excel-row 64126  lon4             lon       lon outside 0..360: 360.007
+  MGG_multibeam2   excel-row 64127  lon4             lon       lon outside 0..360: 360.014
+  MGG_multibeam2   excel-row 64128  lon4             lon       lon outside 0..360: 360.022
+  MGG_multibeam2   excel-row 64129  lon4             lon       lon outside 0..360: 360.024
+  MGG_multibeam2   excel-row 64130  lon4             lon       lon outside 0..360: 360.028
+  MGG_multibeam2   excel-row 64131  lon4             lon       lon outside 0..360: 360.032
+  MGG_multibeam2   excel-row 64132  lon4             lon       lon outside 0..360: 360.033
+  MGG_multibeam2   excel-row 64133  lon4             lon       lon outside 0..360: 360.041
+  MGG_multibeam2   excel-row 64134  lon4             lon       lon outside 0..360: 360.046
+  MGG_multibeam2   excel-row 64135  lon4             lon       lon outside 0..360: 360.046
+  MGG_multibeam2   excel-row 64136  lon4             lon       lon outside 0..360: 360.047
+  MGG_multibeam2   excel-row 64137  lon4             lon       lon outside 0..360: 360.049
+  MGG_multibeam2   excel-row 64138  lon4             lon       lon outside 0..360: 360.049
+  MGG_multibeam2   excel-row 64139  lon4             lon       lon outside 0..360: 360.05
+  MGG_multibeam2   excel-row 64140  lon4             lon       lon outside 0..360: 360.065
+  MGG_multibeam2   excel-row 64141  lon4             lon       lon outside 0..360: 360.081
+  MGG_multibeam3   excel-row 1463   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '113 (2002-04-23T23:57:32.500000)'
+  MGG_multibeam3   excel-row 1463   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '114 (2002-04-24T23:57:26.500000)'
+  MGG_multibeam3   excel-row 1464   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T15:34:26.555000)'
+  MGG_multibeam3   excel-row 1464   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T16:04:09.151000)'
+  MGG_multibeam3   excel-row 1465   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T16:04:25.670000)'
+  MGG_multibeam3   excel-row 1465   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T16:33:05.174000)'
+  MGG_multibeam3   excel-row 1466   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T15:04:21.671000)'
+  MGG_multibeam3   excel-row 1466   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T15:34:08.048000)'
+  MGG_multibeam3   excel-row 1467   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T14:35:37.824000)'
+  MGG_multibeam3   excel-row 1467   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T15:04:04.533000)'
+  MGG_multibeam3   excel-row 1468   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T14:04:28.280000)'
+  MGG_multibeam3   excel-row 1468   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T14:34:03.411000)'
+  MGG_multibeam3   excel-row 1469   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T13:34:17.158000)'
+  MGG_multibeam3   excel-row 1469   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T14:04:07.118000)'
+  MGG_multibeam3   excel-row 1470   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T13:04:28.638000)'
+  MGG_multibeam3   excel-row 1470   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T13:33:55.920000)'
+  MGG_multibeam3   excel-row 1471   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T12:34:28.288000)'
+  MGG_multibeam3   excel-row 1471   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T13:04:07.496000)'
+  MGG_multibeam3   excel-row 1472   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T12:04:12.943000)'
+  MGG_multibeam3   excel-row 1472   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T12:34:08.531000)'
+  MGG_multibeam3   excel-row 1473   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T11:34:19.032000)'
+  MGG_multibeam3   excel-row 1473   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T12:03:52.449000)'
+  MGG_multibeam3   excel-row 1474   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '21 (2017-01-21T13:04:44.662000)'
+  MGG_multibeam3   excel-row 1474   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '21 (2017-01-21T13:34:10.604000)'
+  MGG_multibeam3   excel-row 1475   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '21 (2017-01-21T13:34:31.891000)'
+  MGG_multibeam3   excel-row 1475   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '21 (2017-01-21T14:04:17.067000)'
+  MGG_multibeam3   excel-row 1476   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T11:04:16.289000)'
+  MGG_multibeam3   excel-row 1476   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T11:34:01.008000)'
+  MGG_multibeam3   excel-row 1477   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '21 (2017-01-21T14:04:38.403000)'
+  MGG_multibeam3   excel-row 1477   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '21 (2017-01-21T14:34:03.358000)'
+  MGG_multibeam3   excel-row 1478   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T10:34:20.122000)'
+  MGG_multibeam3   excel-row 1478   jday2            warn      numeric expected [row-3=Multibeam
+End Jday 2] got '23 (2017-01-23T11:03:55.292000)'
+  MGG_multibeam3   excel-row 1479   jday1            warn      numeric expected [row-3=Multibeam
+Start Jday 1] got '23 (2017-01-23T10:04:29.217000)'
+  ... and 61648 more
+
+Elapsed: 28.5 s

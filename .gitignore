@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# generated converter output / large legacy data (kept out of git)
+vba_dump/
+*.xls
